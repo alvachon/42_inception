@@ -16,3 +16,6 @@ Containers can be seen in the docker app
 ## Other stuff
 
 * docker ps -> Can see active containers
+* docker rm {container-id}
+* docker rm -f {container-id}
+* docker stop {container-id}
