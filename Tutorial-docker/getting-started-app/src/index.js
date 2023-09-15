@@ -1,3 +1,6 @@
+/* 
+ * Default command to run when starting a container (node cmd refer this file)
+ */
 const express = require('express');
 const app = express();
 const db = require('./persistence');

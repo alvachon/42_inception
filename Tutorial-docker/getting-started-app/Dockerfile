@@ -10,6 +10,12 @@ COPY . .
 # refer to package.json
 RUN yarn install --production
 # Specifies the default command to run when starting a container from this image
+# Can be writted as follow :
+# 	CMD ["executable", "param1", "param2"]
+# 	CMD ["param1", "param2"]-> As default parameters to ENTRYPOINT
+# 	CMD command param1 param2 (shell form)
+# Can only contain ONE COMMAND.
 CMD ["node", "src/index.js"]
+# This is the exposed port (localhost)
 EXPOSE 3000
 
